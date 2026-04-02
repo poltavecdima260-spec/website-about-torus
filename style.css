@@ -1,0 +1,223 @@
+body {
+    background-color: #050508;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Навігація */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #000000;
+    border-bottom: 2px solid #ffd700;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #ffd700;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/* Hero Section з флексами */
+.hero-section {
+    padding: 80px 8%;
+    background: radial-gradient(circle at 50% 50%, #102040 0%, #050508 100%);
+    display: flex;
+    justify-content: center;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.sub-title {
+    color: #ffd700;
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.hero-text h1 {
+    font-size: 65px;
+    margin: 0 0 25px 0;
+    line-height: 1;
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #cccccc;
+    margin-bottom: 40px;
+}
+
+.hero-visual {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-visual img {
+    width: 100%;
+    max-width: 550px;
+    filter: drop-shadow(0 0 30px #0088ff);
+}
+
+/* Кнопки з тінями */
+.button-row {
+    display: flex;
+}
+
+.main-btn {
+    background-color: #ffd700;
+    color: #000000;
+    padding: 18px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-right: 20px;
+    box-shadow: 0 5px 20px rgba(255, 215, 0, 0.3);
+}
+
+.ghost-btn {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 16px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* Загальні заголовки */
+.center-title {
+    text-align: center;
+    font-size: 42px;
+    color: #ffd700;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+
+/* Секція карток з текстом */
+.info-section {
+    padding: 100px 8%;
+}
+
+.info-flex {
+    display: flex;
+    gap: 30px;
+}
+
+.info-card {
+    flex: 1;
+    background-color: #101015;
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid #222;
+}
+
+.info-card h3 {
+    color: #ffd700;
+    margin-top: 0;
+}
+
+/* Секція Світи - БЕЗ ХОВЕРІВ */
+.worlds-container {
+    padding: 100px 8%;
+    background-color: #000000;
+}
+
+.worlds-layout {
+    display: flex;
+    gap: 20px;
+}
+
+.world-box {
+    flex: 1; /* Всі однакові */
+    height: 450px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.world-asgard { 
+  background-image: url('https://gelios.ua/wp-content/smush-webp/2025/05/asgard.png.webp'); 
+}
+.world-midgard { 
+  background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
+}
+.world-jotun { 
+  background-image: url('https://i.pinimg.com/736x/9c/df/09/9cdf09ae48987d25aa8e96bfe070474d.jpg'); 
+}
+
+.world-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.9));
+}
+
+.world-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+}
+
+/* Арсенал */
+.arsenal-section {
+    padding: 100px 8%;
+}
+
+.weapons-flex {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.weapon-item {
+    background-color: #101015;
+    padding: 60px 40px;
+    text-align: center;
+    border-radius: 20px;
+    width: 350px;
+    border: 1px solid #ffd700;
+}
+
+.weapon-item img {
+    width: 120px;
+    margin-bottom: 30px;
+}
+
+/* Футер */
+.main-footer {
+    padding: 60px;
+    text-align: center;
+    background-color: #000000;
+    border-top: 1px solid #1a1a1a;
+    color: #555555;
+}
